@@ -1,0 +1,24 @@
+.add-activity-card {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.add-activity-card-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.my-activity-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20pt;
+    font-family: poppins;
+    color: black;
+}
