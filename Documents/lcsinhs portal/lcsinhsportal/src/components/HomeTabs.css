@@ -1,8 +1,17 @@
-ion-button {
+.profile-button {
     text-transform: none;
     --background-hover: var(--background);
     --ripple-color: transparent;
     --background-hover-opacity: 0;
+}
+
+
+.profile-pos {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    align-content: center;
+    justify-content: end;
 }
 
 .header-logo {
@@ -49,6 +58,3 @@ ion-tab-button {
     --ripple-color: transparent;
 }
 
-ion-toolbar {
-    --color: white;
-}

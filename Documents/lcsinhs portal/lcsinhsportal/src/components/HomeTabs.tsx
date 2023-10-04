@@ -3,7 +3,6 @@ import {
     IonButton,
     IonToolbar, IonLabel,
     IonIcon,
-    IonRoute,
     IonRouterOutlet,
     IonTabs,
     IonTabBar,
@@ -11,36 +10,38 @@ import {
     IonHeader
 } from "@ionic/react";
 
-import { UseIonHeaderCollapse, useIonHeaderCollapse } from '@codesyntax/ionic-react-header-collapse';
-
-import './Home.css';
+import './HomeTabs.css';
 import { IonReactRouter } from "@ionic/react-router";
-import { barChart, calendar, home, personCircle, personCircleOutline, playCircle, qrCode, radio, search } from "ionicons/icons";
+import { barChart, calendar, home, personCircle, qrCode } from "ionicons/icons";
 import { Redirect, Route } from "react-router";
 import { Activities } from "../pages/Home/Activities/Activities";
 import { Attendance } from "../pages/Home/Attendance/Attendance";
 import { Grades } from "../pages/Home/Grades/Grades";
-import Homepage from "../pages/Home/Home/Homepage";
+import { Homepage } from "../pages/Home/Home/Homepage";
 import { Profile } from "../pages/Home/Profile/Profile";
 
-const Home: React.FC = () => {
-
-    const { ref } = useIonHeaderCollapse({} as UseIonHeaderCollapse);
-    
+const HomeTabs: React.FC = () => {
     return (
-
         <IonPage>
             <div>
                 <IonHeader className="ion-no-border" >
                     <IonToolbar className="new-ion-header">
+                        <div className="profile-pos">
+                            <IonButton className="profile-button" fill="clear" 
+                            slot="icon-only" size="large" color={"light"} href={'/profile'}>
+                                <IonIcon icon={personCircle} size="100">
+                                </IonIcon>
+                            </IonButton>
+                        </div>
                         <div className="header-items">
-                            <IonButton fill="clear" href="home">
+                            <IonButton fill="clear">
                                 <IonImg className="header-logo" src="/src/imgs/logo.png"></IonImg>
                             </IonButton>
                         </div>
                         <div className="header-items">
-                        <IonLabel className="p">Lipa City Science Integrated National High School Portal</IonLabel>
+                            <IonLabel className="p">Lipa City Science Integrated National High School Portal</IonLabel>
                         </div>
+
                     </IonToolbar>
 
                 </IonHeader>
@@ -51,43 +52,48 @@ const Home: React.FC = () => {
                     <IonTabs>
                         <IonRouterOutlet>
 
-                            <Redirect to="/student-home" />
+                            <Redirect exact path="/tabs" to="/tabs/home" />
 
-                            <Route path="/student-home" render={() => <Homepage />} exact={true} />
-                            <Route path="/student-activities" render={() => <Activities />} exact={true} />
-                            <Route path="/student-attendance" render={() => <Attendance />} exact={true} />
-                            <Route path="/student-grades" render={() => <Grades />} exact={true} />
-                            <Route path="/student-profile" render={() => <Profile />} exact={true} />
+                            <Route exact path="/home" >
+                                <Homepage />
+                            </Route>
+                            <Route exact path="/activities" >
+                                <Activities />
+                            </Route>
+                            <Route exact path="/attendance" >
+                                <Attendance />
+                            </Route>
+                            <Route exact path="/grades" >
+                                <Grades />
+                            </Route>
+                            <Route exact path="/profile" >
+                                <Profile />
+                            </Route>
+
                         </IonRouterOutlet>
 
                         <IonTabBar slot="top" className="tab-bar-position">
                             <IonButton></IonButton>
 
-                            <IonTabButton tab="home" href="/student-home">
+                            <IonTabButton tab="home" href="/home">
                                 <IonIcon icon={home} aria-hidden="true" />
                                 <IonLabel>Home</IonLabel>
                             </IonTabButton>
 
-                            <IonTabButton tab="activities" href="/student-activities">
+                            <IonTabButton tab="activities" href="/activities">
                                 <IonIcon icon={calendar} />
                                 <IonLabel>Activities</IonLabel>
                             </IonTabButton>
 
-                            <IonTabButton tab="attendance" href="/student-attendance">
+                            <IonTabButton tab="attendance" href="/attendance">
                                 <IonIcon icon={qrCode} />
                                 <IonLabel>Attendance</IonLabel>
                             </IonTabButton>
 
-                            <IonTabButton tab="grades" href="/student-grades">
+                            <IonTabButton tab="grades" href="/grades">
                                 <IonIcon icon={barChart} />
                                 <IonLabel>Grades</IonLabel>
                             </IonTabButton>
-
-                            <IonTabButton tab="profile" href="/student-profile">
-                                <IonIcon icon={personCircle} />
-                                <IonLabel>Profile</IonLabel>
-                            </IonTabButton>
-
                         </IonTabBar>
                     </IonTabs>
 
@@ -102,4 +108,4 @@ const Home: React.FC = () => {
 };
 
 
-export default Home;
+export default HomeTabs;
