@@ -27,6 +27,9 @@
           "meta[name=color-scheme]"
         ]
       }
-    ]
+    ],
+    "apple-touch-icons": "off",
+    "typescript-config/consistent-casing": "off",
+    "typescript-config/strict": "off"
   }
 }
