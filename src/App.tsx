@@ -69,8 +69,6 @@ const App: React.FC = () => (
         <Route exact path="/admin/faculty" component={Faculty}/>
         <Route exact path="/admin/links" component={Links} />
 
-        <Route exact path="/qr-attendance" component={QRAttendance}/>
-        <Route exact path="/error" component={Error} />
         <Route path="/login" component={Login} />
         <Redirect to="/login" />
       </Switch>

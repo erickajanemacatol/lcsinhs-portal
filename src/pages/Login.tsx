@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
 import { useHistory } from 'react-router-dom';
 import CustomLoading from '../components/utils/Loading';
-import '../components/utils/Spacer.css'
+import '../components/Spacer.css'
 
 const Login: React.FC = () => {
   const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -22,8 +22,6 @@ const Login: React.FC = () => {
   const page = useRef(null);
   const [presentingElement, setPresentingElement] = useState<HTMLElement | null>(null);
 
-  useEffect(() => {
-  }, []);
 
   const [loginData, setLoginData] = useState({
     username: '',

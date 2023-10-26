@@ -5,7 +5,6 @@ import {
     IonIcon, IonChip, IonItem,
     IonButton} from "@ionic/react";
 import './Activities.css';
-import '/src/components/utils/Spacer.css'
 import { add, addSharp } from "ionicons/icons";
 import Header from "../../../components/StudentHeader";
 import { useMediaQuery } from "react-responsive";

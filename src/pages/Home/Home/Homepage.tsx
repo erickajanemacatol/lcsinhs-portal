@@ -13,7 +13,7 @@ import {
     IonText,
     IonToolbar
 } from "@ionic/react";
-import './Homepage.css'
+import './Hompage.css'
 import StudentHeader from "../../../components/StudentHeader";
 import { useMediaQuery } from "react-responsive";
 import { useRef, useState } from "react";

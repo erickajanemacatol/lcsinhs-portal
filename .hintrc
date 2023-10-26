@@ -18,6 +18,15 @@
         ]
       }
     ],
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "meta-viewport": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=color-scheme]"
+        ]
+      }
+    ]
   }
 }

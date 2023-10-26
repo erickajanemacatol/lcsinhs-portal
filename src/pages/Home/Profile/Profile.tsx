@@ -4,7 +4,6 @@ import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 import QRCode from 'qrcode.react';
 import './Profile.css'
-import '/src/components/Spacer.css'
 import { useHistory } from "react-router-dom";
 
 interface UserData {
