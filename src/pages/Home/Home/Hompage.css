@@ -1,0 +1,377 @@
+.content {
+    display: grid;
+    height: max-content;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+
+.home-background {
+    --background: url("/src/imgs/bg.jpg") 100%; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+}
+
+.homepage-card {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    border-radius: 10px;
+}
+
+.homepage-card-position {
+    align-items: center;
+    margin-top: 250px;
+}
+
+.recent-news-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 16px;
+}
+
+/*FOR SCROLLABLE CARDS*/
+.scrollable-container {
+    width: 100%;
+    overflow: auto; /* Use "auto" for horizontal scrolling */
+    white-space: nowrap;
+    display: flex; /* Add this to enable side-by-side cards */
+    padding-bottom: 20px; /* Reserve space for the scrollbar */
+    scroll-behavior: smooth; /* Add a smooth scrolling effect */
+    scrollbar-width: thin; /* Display scrollbar on browsers that support it */
+}
+
+.news-card {
+    flex: 0 0 auto;
+    width: 50%; /* Adjust the card width for two cards per row */
+    margin-right: 10px; /* Add spacing between cards */
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+/* Add this to your CSS stylesheet */
+.news-slider {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: thin; /* Display scrollbar on browsers that support it */
+}
+
+.news-items {
+    display: inline-flex;
+    transition: transform 0.5s ease-in-out;
+    padding-bottom: 5px; 
+}
+
+.news-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-card {
+    flex: 0 0 calc(50% - 20px);
+    margin: 0 10px; 
+    scroll-snap-align: center; 
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.news-card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.scrollable-parent {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+/* Webkit-based browsers scrollbar */
+.scrollable-parent::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollable-parent::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+.scrollable-parent::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+}
+
+.scrollable-parent::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+}
+
+
+/*ANNOUNCEMENT*/
+.anncm-card {
+    box-shadow: none !important;
+}
+
+/*CALENDAR*/
+
+.calendar-pos {
+    margin-top: 250px;
+    display: flex;
+    justify-content: end;
+}
+
+.calendar-card {
+    display: block;
+    justify-content: start;
+    width: 93%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.cal-cont{
+    margin: 20px;
+}
+
+.events {
+    overflow-y: auto;
+    max-height: 200px;
+  }
+  
+
+.p {
+    font-size: x-large;
+    font-family: poppins;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+.recent-news {
+    height: auto;
+}
+
+ion-col {
+    display: flex;
+}
+
+.mission {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: max-content;
+}
+
+.mission-card {
+    border-radius: 10px;
+    height: 100%;
+    background-color: black;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+}
+
+.mission-card-header {
+    font-size: large;
+    font-family: poppins;
+    font-weight: 500;
+    color: white;
+}
+
+.p1 {
+    font-size: 11pt;
+    color: white;
+    text-align: justify;
+}
+
+
+.footer-toolbar {
+    display: block;
+    align-items: center;
+    justify-content: start;
+    background-color: #000;
+
+    .s-font {
+        font-size: x-large;
+        font-family: poppins;
+        font-weight: bold;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .f-font {
+        font-size: x-large;
+        font-family: poppins;
+        font-weight: 400;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .a-font {
+        font-size: medium;
+        font-family: poppins;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+.footer1 {
+    margin-top: 20px;
+}
+
+.about {
+    padding: 10px;
+}
+
+.logo-size1 {
+    display: flex;
+    width: 350px;
+}
+
+.logo-w-name {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.allrights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/*MOBILE CSS*/
+
+.m-display-block {
+    display: block;
+}
+
+.m-content {
+    --background: red;
+}
+
+.m-homepage-card {
+    display: block;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.m-homepage-card-position {
+    align-items: center;
+}
+
+.m-calendar-pos {
+    display: block;
+    justify-content: end;
+}
+
+.m-calendar-card {
+    display: block;
+    justify-content: start;
+    width: 93%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.m-p {
+    font-size: large;
+    font-family: poppins;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+.m-recent-news {
+    height: auto;
+}
+
+.m-mission-card {
+    border-radius: 10px;
+    height: 100%;
+    background-color: black;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+}
+
+.m-mission-card-header {
+    font-size: medium;
+    font-family: poppins;
+    font-weight: 500;
+    color: white;
+}
+
+.m-p1 {
+    font-size: 9pt;
+    color: white;
+    text-align: justify;
+}
+
+.m-footer-toolbar {
+    display: block;
+    background-color:black;
+
+    .m-s-font {
+        font-size: large;
+        font-family: poppins;
+        font-weight: bold;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .m-f-font {
+        font-size: x-large;
+        font-family: poppins;
+        font-weight: 400;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .m-a-font {
+        font-size: small;
+        font-family: poppins;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+.m-footer1 {
+    margin-top: 20px;
+}
+
+.m-logo-size1 {
+    display: flex;
+    width: 250px;
+}
+
+.m-logo-w-name {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.m-allrights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

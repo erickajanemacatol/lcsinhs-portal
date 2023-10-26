@@ -1,0 +1,204 @@
+/*DESKTOP*/
+ion-button {
+    text-transform: none;
+}
+
+.logo-with-name-container {
+    display: block;
+    justify-content: center;
+}
+
+.logo-size {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+    width: 130px;
+}
+
+.lcsinhs-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: poppins;
+    color: black;
+}
+
+.login-card {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 310px;
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: gainsboro;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.login-card-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-text {
+    font-weight: 300;
+    font-size: 15pt;
+    color: black;
+    align-items: center;
+}
+
+.login-form-container {
+    display: block;
+    align-items: center;
+}
+
+.forgot {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.forgot-text-size {
+    font-size: 100pt;
+}
+
+.submit {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.contact-button {
+    width: auto;
+    --ripple-color: transparent;
+    --background-hover: var(--background);
+}
+
+/*modal css*/
+.modal-design {
+    --border-radius: 10px;
+}
+
+.header-title {
+    font-weight: bold;
+    font-family: poppins;
+}
+
+.card-email {
+    display: block;
+    border-radius: 10px;
+    box-shadow: none;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.email-1 {
+    color: rgb(0, 88, 35);
+
+}
+
+.email-2 {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*MOBILE*/
+.mobile-logo-with-name-container {
+    display: block;
+    justify-content: center;
+}
+
+.m-logo-size {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+    width: 130px;
+}
+
+.m-lcsinhs-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: poppins;
+    color: black;
+    width: 90%;
+}
+
+.m-login-card {
+    display: block;
+    width: 320px;
+    height: max-content;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.m-login-card-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-login-text {
+    font-weight: 300;
+    font-size: 12pt;
+    color: black;
+    margin: auto;
+}
+
+.m-login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.m-forgot {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: end;
+}
+
+.m-forgot-text-size {
+    font-size: 10pt;
+}
+
+.m-submit {
+    display: flex;
+    font-size: 12pt;
+    height: 20px;
+    align-items: center;
+    justify-content: end;
+    --border-radius: 12px;
+
+}
+
+.m-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-contact-button {
+    --ripple-color: transparent;
+    --background-hover: var(--background);
+}

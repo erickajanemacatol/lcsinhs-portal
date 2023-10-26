@@ -1,0 +1,7 @@
+{
+  "name": "lcsinhs-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
